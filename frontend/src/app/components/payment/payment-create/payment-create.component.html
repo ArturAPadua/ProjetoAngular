@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-title>Novo Pagamento</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Modelo"
+        [(ngModel)]="payment.modelo"
+        name="modelo"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Cor" [(ngModel)]="payment.cor" name="cor" />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="placa"
+        [(ngModel)]="payment.placa"
+        name="placa"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="concessionaria"
+        [(ngModel)]="payment.concessionaria"
+        name="concessionaria"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createPayment()" color="primary">
+    Salvar
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

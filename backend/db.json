@@ -6,6 +6,20 @@
       "placa": "TUK4M19",
       "concessionaria": "Chevrolet",
       "id": 2
+    },
+    {
+      "modelo": "Touro",
+      "cor": "Prata",
+      "placa": "TUC4A17",
+      "concessionaria": "Fiat",
+      "id": 3
+    },
+    {
+      "modelo": "Ferrari",
+      "cor": "Vermelho",
+      "placa": "ABC0D12",
+      "concessionaria": "Ferrari",
+      "id": 4
     }
   ]
 }
