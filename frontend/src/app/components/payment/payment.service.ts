@@ -23,4 +23,8 @@ export class PaymentService {
   create(payment: Payment): Observable<Payment> {
     return this.http.post<Payment>(this.baseUrl, payment);
   }
+
+  read(): Observable<Payment[]> {
+    return this.http.get<Payment[]>(this.baseUrl);
+  }
 }

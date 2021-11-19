@@ -1,0 +1,32 @@
+<div class="mat-elevetion-z4">
+    <table mat-table [dataSource]="payments">
+  
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <th mat-cell *matCellDef="let row">{{ row.id }}</th>
+    </ng-container>
+
+    <ng-container matColumnDef="modelo">
+      <th mat-header-cell *matHeaderCellDef>Modelo</th>
+      <th mat-cell *matCellDef="let row">{{ row.modelo }}</th>
+    </ng-container>
+
+    <ng-container matColumnDef="cor">
+      <th mat-header-cell *matHeaderCellDef>Cor</th>
+      <th mat-cell *matCellDef="let row">{{ row.cor }}</th>
+    </ng-container>
+
+    <ng-container matColumnDef="placa">
+      <th mat-header-cell *matHeaderCellDef>Placa</th>
+      <th mat-cell *matCellDef="let row">{{ row.placa }}</th>
+    </ng-container>
+
+    <ng-container matColumnDef="concessionaria">
+      <th mat-header-cell *matHeaderCellDef>Concessionaria</th>
+      <th mat-cell *matCellDef="let row">{{ row.concessionaria }}</th>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+  

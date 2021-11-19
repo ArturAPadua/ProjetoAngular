@@ -24,6 +24,10 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { PaymentReadComponent } from "./components/payment/payment-read/payment-read.component";
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatSortModule } from "@angular/material/sort";
 
 @NgModule({
   declarations: [
@@ -34,6 +38,7 @@ import { MatInputModule } from "@angular/material/input";
     HomeComponent,
     PaymentComponent,
     PaymentCreateComponent,
+    PaymentReadComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +54,9 @@ import { MatInputModule } from "@angular/material/input";
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
